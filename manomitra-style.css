@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #4a6fa5;
+    --background-color: #f5f7fa;
+    --chat-bubble-user: #4a6fa5;
+    --chat-bubble-bot: #e9ecef;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --border-color: #d1d9e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --input-bg: #ffffff;
+    --chip-bg: #e9ecef;
+    --chip-hover: #dee2e6;
+}
+
+[data-theme="dark"] {
+    --primary-color: #6b8cbc;
+    --background-color: #1a1a2e;
+    --chat-bubble-user: #6b8cbc;
+    --chat-bubble-bot: #3a3a5a;
+    --text-primary: #f0f0f0;
+    --text-secondary: #cfcfcf;
+    --border-color: #3a3a5a;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --input-bg: #2d2d44;
+    --chip-bg: #3a3a5a;
+    --chip-hover: #4a4a6a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    height: 90vh;
+    background: var(--background-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.chat-area {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-bubble {
+    max-width: 80%;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    border-radius: 18px;
+    position: relative;
+    animation: fadeIn 0.3s ease;
+}
+
+.user-bubble {
+    align-self: flex-end;
+    background-color: var(--chat-bubble-user);
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+.bot-bubble {
+    align-self: flex-start;
+    background-color: var(--chat-bubble-bot);
+    color: var(--text-primary);
+    border-bottom-left-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.quick-chips {
+    display: flex;
+    gap: 10px;
+    padding: 0 20px 20px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    background-color: var(--chip-bg);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: var(--text-primary);
+}
+
+.chip:hover {
+    background-color: var(--chip-hover);
+}
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+#messageInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#messageInput:focus {
+    border-color: var(--primary-color);
+}
+
+#sendButton {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#sendButton:hover {
+    background-color: #3a5a80;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Scrollbar styling */
+.chat-area::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-area::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+.chat-area::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+.chat-area::-webkit-scrollbar-thumb:hover {
+    background: #3a5a80;
+}

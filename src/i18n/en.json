@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Home",
+    "chapters": "Chapters",
+    "saved": "Saved",
+    "settings": "Settings",
+    "geetAI": "Geet AI",
+    "manomitra": "Manomitra"
+  },
+  "common": {
+    "home": "Home",
+    "chapters": "Chapters",
+    "geetAI": "Geet AI",
+    "settings": "Settings",
+    "verses": "Verses",
+    "savedVerses": "Saved Verses",
+    "search": "Search...",
+    "loading": "Loading...",
+    "retry": "Retry",
+    "error": "Something went wrong"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "sectionExplore": "Explore",
+    "todaysVerse": "Verse of the Day",
+    "exploreChapters": "Continue Reading",
+    "savedVerses": "Saved Verses",
+    "geetAI": "Geet AI"
+  },
+  "chapters": {
+    "title": "Bhagavad Gita",
+    "subtitle": "The Divine Song",
+    "versesCount": "Verses",
+    "chapter": "Chapter"
+  },
+  "sloka": {
+    "verse": "Verse",
+    "translation": "Translation",
+    "purport": "Purport",
+    "playAudio": "Play Audio",
+    "pauseAudio": "Pause Audio",
+    "stopAudio": "Stop Audio",
+    "share": "Share",
+    "saved": "Verse Saved",
+    "unsaved": "Verse Removed"
+  },
+  "voice": {
+    "title": "Geet AI",
+    "placeholder": "Ask anything about the Gita...",
+    "ask": "Ask",
+    "clear": "Clear Chat",
+    "emptyState": "Start a conversation with Geet AI"
+  },
+  "settings": {
+    "title": "Settings",
+    "fontSize": "Font Size",
+    "fontSizeHint": "Adjust the text size for better readability.",
+    "language": "Language",
+    "notifications": "Notifications",
+    "dailyReminder": "Daily Reminder",
+    "dailyReminderDesc": "Receive a verse of the day every morning.",
+    "reminderAt": "Reminder at",
+    "appearance": "Appearance",
+    "darkMode": "Dark Mode",
+    "darkModeDesc": "Enable dark theme for comfortable night reading.",
+    "about": "About",
+    "appName": "Dharma",
+    "appSubtitle": "Your Spiritual Companion",
+    "version": "Version 1.0.0",
+    "appDescription": "Dharma is your personal guide to the Bhagavad Gita, providing daily wisdom and spiritual insights to help you navigate life's challenges with peace and clarity."
+  },
+  "manomitra": {
+    "title": "Manomitra",
+    "subtitle": "A calm companion for your mind",
+    "disclaimer": "Manomitra offers emotional support, not medical diagnosis.",
+    "welcomeMessage": "Hello! I'm Manomitra, your calming companion for emotional support. How can I help you today?",
+    "placeholder": "Type your thoughts here...",
+    "error": "Sorry, something went wrong. Please try again.",
+    "botFallback": "I'm sorry, I didn't quite understand that.",
+    "quickChipsTitle": "Quick feelings",
+    "quickChip1": "I feel sad",
+    "quickChip2": "I am anxious",
+    "quickChip3": "I need motivation",
+    "quickChip4": "I feel lonely"
+  },
+  "languages": {
+    "en": "English",
+    "te": "Telugu (తెలుగు)",
+    "hi": "Hindi (హిन्दी)",
+    "ta": "Tamil (தமிழ்)",
+    "ml": "Malayalam (മലയാളം)",
+    "kn": "Kannada (ಕನ್ನಡ)"
+  }
+}
