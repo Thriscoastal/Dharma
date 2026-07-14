@@ -76,7 +76,7 @@ const SavedSlokaItem = ({ item, index, onPress, onRemove, isDark, scaledSizes, l
         <View style={[itemStyles.numberContainer, { backgroundColor: gold }]}>
           <Text style={itemStyles.numberText}>{sloka.verse_number}</Text>
         </View>
-        
+
         <View style={itemStyles.slokaContent}>
           <View style={itemStyles.slokaHeader}>
             <Text style={[itemStyles.verseTitle, { color: isDark ? COLORS.darkTextPrimary : COLORS.textPrimary, fontSize: scaledSizes.base }]}>
@@ -86,7 +86,7 @@ const SavedSlokaItem = ({ item, index, onPress, onRemove, isDark, scaledSizes, l
               <Icon name="bookmark" size={22} color={gold} />
             </TouchableOpacity>
           </View>
-          
+
           <Text
             style={[itemStyles.slokaText, { color: isDark ? COLORS.darkTextSecondary : COLORS.textSecondary, fontSize: scaledSizes.small }]}
             numberOfLines={2}
@@ -157,7 +157,7 @@ const SavedSlokasScreen = ({ navigation }) => {
   const { scaledSizes } = useFontSize();
   const { language } = useLanguage();
   const t = useTranslation();
-  
+
   const [refreshing, setRefreshing] = useState(false);
 
   const styles = React.useMemo(() => getStyles(isDark), [isDark]);
@@ -203,11 +203,11 @@ const SavedSlokasScreen = ({ navigation }) => {
           <SavedSlokaItem
             item={item}
             index={index}
-            onPress={() => navigation.navigate('ChaptersTab', { 
+            onPress={() => navigation.navigate('ChaptersTab', {
               screen: 'SlokaDetail',
               params: {
-                chapterNumber: item.slokas.chapter_number, 
-                slokaNumber: item.slokas.verse_number 
+                chapterNumber: item.slokas.chapter_number,
+                slokaNumber: item.slokas.verse_number
               }
             })}
             onRemove={() => toggleBookmark(item.slokas)}
@@ -336,3 +336,5 @@ const getStyles = (isDark) => StyleSheet.create({
 });
 
 export default SavedSlokasScreen;
+
+

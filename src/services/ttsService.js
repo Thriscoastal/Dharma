@@ -13,7 +13,7 @@ const LANGUAGE_VOICE_MAP = {
   'kn': 'kannada_guru'
 };
 
-const TTS_API_URL = 'https://paltry-unopposed-saint.ngrok-free.dev/generate-speech';
+const TTS_API_URL = 'https://thong-chaste-imprecise.ngrok-free.dev/generate-speech';
 
 let currentSound = null;
 

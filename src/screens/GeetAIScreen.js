@@ -18,7 +18,7 @@ import { useTranslation } from '../hooks/useTranslation';
 
 import { useTheme } from '../context/ThemeContext';
 
-const API_URL = 'https://reenact-cache-removal.ngrok-free.dev/chat';
+const API_URL = 'https://outshine-sequence-alone.ngrok-free.dev/chat';
 
 const GeetAIScreen = () => {
   const { isDark } = useTheme();

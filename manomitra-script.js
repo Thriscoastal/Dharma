@@ -5,7 +5,7 @@ const sendButton = document.getElementById('sendButton');
 const quickChips = document.querySelectorAll('.chip');
 
 // API endpoint
-const API_URL = 'https://backfire-such-variable.ngrok-free.dev/chatbot';
+const API_URL = 'https://stifle-retread-spotless.ngrok-free.dev/chat';
 
 // Add welcome message
 function addWelcomeMessage() {
